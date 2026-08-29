@@ -37,6 +37,12 @@
 | EL-33 | StoryWrite project | User confirmed: mock, never built | EXCLUDED |
 | EL-34 | Performance metrics / user counts / team sizes for any project | Not found in any source | Not available — omit |
 | EL-35 | Git version control and GitHub used across all projects (Ryder, TurfOnTop, Trajectory, LearnSphere, Suvidha, 4-in-a-row, and the portfolio itself are all git repositories hosted on github.com/Riyanshverma) | Presence of `.git` directories in every project repo; github.com/Riyanshverma links used throughout portfolio (SocialBadge/project links) | Yes |
+| EL-36 | Next.js, MongoDB, Docker, WebSockets, and Data Structures & Algorithms — candidate-confirmed familiarity, not yet used in a shipped project in any repo checked. Same evidentiary basis as C++ (bare Languages/Skills-line entry, no project bullet claiming usage). | User confirmation (this session) | Yes — confirmed knowledge, no project usage |
+| EL-37 | Ryder: PostgreSQL schema has exactly 5 tables — `users`, `owners`, `cars`, `car_rentals`, `car_bookings` | ryder/README.md line 195-199 (exact schema table list) | Yes |
+| EL-38 | Dynamicore Strategies (current, Full Stack Developer Intern) role uses exactly 18 distinct technologies per the portfolio's own techNTools list | my-portfolio/src/Data/experience-info.ts (programmatically counted) | Yes |
+| EL-39 | The Learner's Academy role uses exactly 12 distinct technologies per the portfolio's own techNTools list | my-portfolio/src/Data/experience-info.ts (programmatically counted) | Yes |
+| EL-40 | Dynamicore Strategies (earlier, Front-End Developer Intern) role uses exactly 8 distinct technologies per the portfolio's own techNTools list | my-portfolio/src/Data/experience-info.ts (programmatically counted) | Yes |
+| EL-41 | Trajectory and TurfOnTop each use exactly 16 distinct technologies; Ryder uses exactly 11 distinct technologies, per the portfolio's own techStack lists | my-portfolio/src/Data/projects-info.ts (programmatically counted) | Yes |
 
 ## Notes
 
