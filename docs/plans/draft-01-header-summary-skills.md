@@ -49,7 +49,7 @@ No first-person pronouns used. No fluff words ("passionate," "eager," "hardworki
 **Backend Frameworks:** Express.js, Elysia, Hono, FastAPI <!-- Express.js: EL-20,EL-24; Elysia: EL-09,EL-26; Hono: EL-28; FastAPI: EL-02,EL-22,EL-23 -->
 **Databases:** PostgreSQL, MySQL, Supabase, Redis, ChromaDB <!-- PostgreSQL: EL-16,EL-20; MySQL: EL-14; Supabase: EL-09,EL-24,EL-26,EL-28; Redis: EL-02; ChromaDB: EL-23 -->
 **AI Engineering:** LangChain, LangGraph, Retrieval-Augmented Generation (RAG), LLM Applications, AI Agents, Embeddings, Vector Search, Prompt Engineering <!-- LangChain: EL-02,EL-23; LangGraph: EL-02; RAG: EL-03,EL-23; LLM Applications: EL-02,EL-05,EL-22; AI Agents: EL-02,EL-04; Embeddings: EL-22,EL-23; Vector Search: EL-22,EL-23 (vectorstore.py, chromadb); Prompt Engineering: EL-02,EL-05 -->
-**Developer Tools:** Razorpay API, REST APIs, JWT Authentication <!-- Razorpay API: EL-09,EL-17; REST APIs: EL-20; JWT Authentication: EL-15,EL-20,EL-26 -->
+**Developer Tools:** Git, GitHub, Razorpay API, REST APIs, JWT Authentication <!-- Git: EL-35; GitHub: EL-35; Razorpay API: EL-09,EL-17; REST APIs: EL-20; JWT Authentication: EL-15,EL-20,EL-26 -->
 **Engineering Concepts:** OOP, Database Design, API Design, System Design, Authentication & Authorization <!-- OOP: EL-14 (Java CRUD); Database Design: EL-16,EL-27 (3NF schema); API Design: EL-20,EL-22; System Design: EL-02,EL-04,EL-07 (multi-agent orchestration, RBAC architecture); Authentication & Authorization: EL-15,EL-20,EL-26 -->
 
 ---
@@ -92,20 +92,23 @@ EL- citation," and the project's global constraint states every technology
 in the skills list must trace to an EL-ID.
 
 Where the illustrative example and the governing rule conflict, this draft
-follows the rule: these seven items are **dropped** from the Technical
-Skills section rather than included with a flag, since no EL entry
-(EL-01–EL-28) references Uvicorn, CockroachDB, Docker, WebSockets, Git,
-GitHub, or Data Structures & Algorithms by name or clear implication. The
+follows the rule: unsupported items are **dropped** from the Technical
+Skills section rather than included with a flag. The
 `Backend / Runtime` category is retained (Node.js, Bun are EL-backed) with
 Uvicorn removed; `Databases` retains PostgreSQL/MySQL/Supabase/Redis/ChromaDB
-with CockroachDB removed; `Developer Tools` retains only Razorpay
-API/REST APIs/JWT Authentication, with Git, GitHub, Docker, and WebSockets
-removed; `Engineering Concepts` drops Data Structures & Algorithms for the
-same reason, retaining OOP, Database Design, API Design, System Design, and
-Authentication & Authorization, all of which have direct EL- support.
+with CockroachDB removed; `Engineering Concepts` drops Data Structures &
+Algorithms for the same reason, retaining OOP, Database Design, API Design,
+System Design, and Authentication & Authorization, all of which have direct
+EL- support.
 
-If a reviewer later finds ledger-worthy evidence for any of these seven
-items (e.g., a repository README mentioning Docker or a CI file), they can
-be reinstated with a proper EL- citation in a future ledger update — this
-draft does not fabricate that evidence to preserve the brief's example
-list.
+**Update:** Git and GitHub were reinstated into `Developer Tools` after the
+user confirmed usage and a new ledger entry (EL-35) was added, backed by the
+presence of `.git` directories in every project repository and the
+`github.com/Riyanshverma` links already used throughout the live portfolio.
+Docker and WebSockets remain excluded — a direct search across every project
+repository (Ryder, TurfOnTop, Trajectory, LearnSphere, Suvidha) found no
+Dockerfile, docker-compose file, or WebSocket usage in first-party code (the
+only "docker" hits were inside a third-party Python `.venv` dependency and
+unrelated skill-reference docs, not project code). If ledger-worthy evidence
+for Docker or WebSockets surfaces later, they can be reinstated with a
+proper EL- citation.

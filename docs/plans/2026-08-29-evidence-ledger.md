@@ -36,6 +36,7 @@
 | EL-32 | Education: DPS Middle School Diploma, Apr 2019–Apr 2020, 91% | User-supplied LinkedIn export (this session) | Yes |
 | EL-33 | StoryWrite project | User confirmed: mock, never built | EXCLUDED |
 | EL-34 | Performance metrics / user counts / team sizes for any project | Not found in any source | Not available — omit |
+| EL-35 | Git version control and GitHub used across all projects (Ryder, TurfOnTop, Trajectory, LearnSphere, Suvidha, 4-in-a-row, and the portfolio itself are all git repositories hosted on github.com/Riyanshverma) | Presence of `.git` directories in every project repo; github.com/Riyanshverma links used throughout portfolio (SocialBadge/project links) | Yes |
 
 ## Notes
 
