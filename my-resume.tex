@@ -1,0 +1,158 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Riyansh Verma} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+91-9509175031 \\ Jaipur, India}
+\address{\href{riyanshverma01.2004@gmail.com}{riyanshverma01.2004@gmail.com} \\ \href{https://www.linkedin.com/in/riyansh-verma-71728b261}{linkedin.com/in/riyansh-verma-71728b261} \\ \href{https://github.com/Riyanshverma}{https://github.com/Riyanshverma}}  %
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SUMMARY}
+
+{Software Engineer with full-stack development experience across React, TypeScript, Node.js, and FastAPI, backed by PostgreSQL and Supabase, gained through internships and independent projects. Designs and ships REST APIs, authentication systems, and relational database schemas end-to-end. Works as an AI engineering specialist as a secondary focus, building Retrieval-Augmented Generation pipelines and multi-agent LLM systems with LangChain and LangGraph for production chatbot and assessment platforms.}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Bachelor of Technology, Computer Science Engineering}
+
+{JK Lakshmipat University, Jaipur, Rajasthan} \hfill {2022 - 2026} \hfill {CGPA: 7.5/10}
+
+{\bf High School Diploma, Mathematics and Computer Science}
+
+{Delhi Public School, Jaipur, Rajasthan} \hfill {Apr 2021 - Apr 2022} \hfill {88\%}
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages: & TypeScript, JavaScript, Python, SQL, Java, C++
+\\
+\\
+Frontend: & React.js, Redux Toolkit, Zustand, Tailwind CSS, shadcn/ui, Radix UI, Chart.js
+\\
+\\
+Backend / Runtime: & Node.js, Bun
+\\
+\\
+Backend Frameworks: & Express.js, Elysia, Hono, FastAPI
+\\
+\\
+Databases: & PostgreSQL, MySQL, Supabase, Redis, ChromaDB
+\\
+\\
+AI Engineering: & LangChain, LangGraph, Retrieval-Augmented Generation (RAG), LLM Applications, AI Agents, Embeddings, Vector Search, Prompt Engineering
+\\
+\\
+Developer Tools: & Git, GitHub, Razorpay API, REST APIs, JWT Authentication
+\\
+\\
+Engineering Concepts: & OOP, Database Design, API Design, System Design, Authentication \& Authorization
+\end{tabular}\\
+\end{rSection}
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Full Stack Developer Intern} \hfill May 2026 - Present\\
+Dynamicore Strategies \hfill \textit{Rajasthan (Hybrid)}
+ \begin{itemize}
+    \itemsep -2pt {}
+     \item Developed multi-agent orchestration for a financial chatbot using FastAPI, LangGraph, LangChain, and Redis.
+     \item Implemented Retrieval-Augmented Generation (RAG) and agentic memory for contextual, multi-turn conversations.
+     \item Built specialist agents and a routing Supervisor with LLM-based reasoning, deterministic Python compliance gates, and model fine-tuning to handle user intent classification and compliance checks.
+ \end{itemize}
+
+\textbf{Full Stack Engineer Intern} \hfill Jan 2026 - May 2026\\
+The Learner's Academy \hfill \textit{Rajasthan (Remote)}
+ \begin{itemize}
+    \itemsep -2pt {}
+     \item Built a school management system with a multi-identity RBAC architecture using React, Elysia, Bun, and Supabase.
+     \item Implemented academic year scoping and attendance monitoring across student and teacher modules.
+     \item Developed result publishing with historical term data and a parent dashboard for progress tracking.
+ \end{itemize}
+
+\textbf{Front-End Developer Intern} \hfill May 2025 - June 2025\\
+Dynamicore Strategies \hfill \textit{Rajasthan (Remote)}
+ \begin{itemize}
+    \itemsep -2pt {}
+     \item Built a fintech platform frontend with real-time portfolio tracking, an investment explorer, live market data, loan comparison tools, KYC integration flows, and gamified financial-literacy learning modules using React, TypeScript, and Chart.js.
+     \item Implemented a responsive, mobile-first UI using shadcn/ui, Radix UI, and Tailwind CSS.
+ \end{itemize}
+
+\textbf{Data Visualization Intern} \hfill May 2024 - June 2024\\
+Aunwesha Knowledge Tech \hfill \textit{Kolkata (On-site)}
+ \begin{itemize}
+    \itemsep -2pt {}
+     \item Analyzed Kaggle datasets and built interactive dashboards using Tableau, alongside Java-based CRUD operations against MySQL via JDBC for dataset management.
+     \item Built data-visualization web tools using Vega-Lite and jQuery/AJAX for bar, line, pie, and time-series charts.
+ \end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+\vspace{-1.25em}
+
+\item \textbf{Trajectory -} {Engineered a Retrieval-Augmented Generation pipeline with FastAPI, LangChain, and ChromaDB, including document loading, chunking, and embedding generation via sentence-transformers. Built an AI career assistant that combines psychometric assessment results with retrieved job/education data to generate personalized learning roadmaps. Designed a Node.js/Express/Supabase backend and a React frontend with Redux Toolkit, Chart.js, and react-d3-tree for interactive roadmap visualization.}
+
+{Technologies Used : React, Redux Toolkit, Node.js, Express.js, Supabase, Python, FastAPI, LangChain, ChromaDB}
+
+\item \textbf{Ryder -} {Designed a relational PostgreSQL schema (users, owners, cars, rentals, bookings) supporting real-time car search, filtering, and availability. Implemented JWT httpOnly-cookie authentication with role-based routing for separate user and owner flows. Integrated Razorpay payment order creation and signature validation, and automated booking-status updates via a daily cron job.}
+
+{Technologies Used : React, Node.js, Express.js, PostgreSQL, Supabase, Razorpay}
+
+\item \textbf{TurfOnTop -} {Built a RESTful Express.js API with JWT authentication supporting real-time turf slot booking and dynamic availability updates. Integrated Razorpay payments, a Weather API for slot-time conditions, and Cloudinary for image/document storage.}
+
+{Technologies Used : React, Node.js, Express.js, PostgreSQL, Razorpay, Weather API}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH & PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{RESEARCH \& PUBLICATIONS}
+
+\textbf{Decentralized Carbon Markets: Blockchain-Enabled Carbon Credit Exchange} \hfill Published April 2026\\
+IEEE \hfill \href{https://ieeexplore.ieee.org/document/11471701}{ieeexplore.ieee.org/document/11471701}
+ \begin{itemize}
+    \itemsep -2pt {}
+     \item Co-authored research addressing inefficiency, lack of transparency, and limited accessibility in offline carbon credit trading through a blockchain-based decentralized exchange design.
+ \end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Extra-Curricular Activities}
+% \begin{itemize}
+%     \item 	Actively write \href{https://www.faangpath.com/blog/}{blog posts} and social media posts (\href{https://www.tiktok.com/@faangpath}{TikTok}, \href{https://www.instagram.com/faangpath/?hl=en}{Instagram}) viewed by over 20K+ job seekers per week to help people with best practices to land their dream jobs.
+%     \item	Sample bullet point.
+% \end{itemize}
+
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+\end{document}
