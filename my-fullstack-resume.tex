@@ -1,0 +1,229 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[
+    left=0.3in,
+    top=0.3in,
+    right=0.3in,
+    bottom=0.3in
+]{geometry}
+
+% resume.cls already loads hyperref
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=blue,
+    citecolor=blue
+}
+
+\name{Riyansh Verma}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% HEADER
+%----------------------------------------------------------------------------------------
+
+\vspace{-22pt}
+
+\begin{center}
+    {\normalsize
+    \href{tel:+919509175031}{+91-9509175031}
+    \,${\vert}$\,
+    \href{mailto:riyanshverma01.2004@gmail.com}{riyanshverma01.2004@gmail.com}
+    \,${\vert}$\,
+    \href{https://www.linkedin.com/in/riyansh-verma-71728b261}{LinkedIn}
+    \,${\vert}$\,
+    \href{https://github.com/Riyanshverma}{GitHub}
+    \,${\vert}$\,
+    \href{https://riyansh-portfolio-five.vercel.app/}{Portfolio}
+    }
+    \\[2pt]
+\end{center}
+
+\vspace{-2pt}
+
+%----------------------------------------------------------------------------------------
+% SUMMARY
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SUMMARY}
+Full-Stack Developer specializing in TypeScript, React, Node.js, Python, FastAPI, and PostgreSQL, with experience building scalable REST APIs, microservices, real-time systems, RAG pipelines, and AI agent workflows.
+
+\end{rSection}
+
+\vspace{-2pt}
+
+%----------------------------------------------------------------------------------------
+% TECHNICAL STRENGTHS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{TECHNICAL SKILLS}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{2pt}
+
+\textbf{Languages:} TypeScript, JavaScript, Python, C++, SQL \\[2pt]
+\textbf{Frontend:} React, Next.js, Tailwind CSS, Redux, Zustand \\[2pt]
+\textbf{Backend:} Node.js, Bun, Express, Hono, Elysia, Fastify, FastAPI, REST APIs, WebSockets \\[2pt]
+\textbf{Databases:} PostgreSQL, MySQL, Redis, CockroachDB \\[2pt]
+\textbf{AI Engineering:} RAG, LangChain, LangGraph, AI Agents, Prompt Engineering, LangSmith \\[2pt]
+\textbf{Testing \& Validation:} PyTest, Playwright, Zod, Pydantic, Vitest, Unit Testing, E2E Testing \\[2pt]
+\textbf{Architecture:} System Design, Microservices, Distributed Systems, Message Queues, Event-Driven Architecture
+
+\end{rSection}
+
+\vspace{-2pt}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE HEADING
+%----------------------------------------------------------------------------------------
+
+\newcommand{\experienceHeading}[4]{%
+    \noindent
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \textbf{#1}\,\textbar\,\textbf{#2}
+        &
+        \textit{#3}\,\textbar\,\textit{#4}
+    \end{tabular*}%
+    \vspace{-16pt}
+}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXPERIENCE}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{2pt}
+
+\experienceHeading
+{Full Stack Developer}
+{Dynamicore Strategies}
+{Jaipur}
+{May 2026 -- Present}
+
+\begin{itemize}
+    \itemsep -3pt {}
+
+    \item Engineered a multi-agent financial assistant using Python, LangGraph, and LangChain, orchestrating specialist agents and 15+ tools for portfolio management, investment guidance, and financial education.
+
+    \item Built a RAG pipeline over 60,000+ finance and education PDFs using hybrid search, CockroachDB, PostgreSQL, Redis caching, rate limiting, and multi-layer memory; developed LoRA fine-tuned guardrails on 1M+ prompts with LangSmith, LangServe, Pydantic, and PyTest, achieving $\sim$200ms classification and 4--5s TTFT.
+
+\end{itemize}
+
+
+\experienceHeading
+{Full Stack Intern}
+{The Learner's Academy}
+{Jaipur}
+{Jan 2026 -- May 2026}
+
+\begin{itemize}
+    \itemsep -3pt {}
+
+    \item Engineered an end-to-end school ERP for $\sim$500 users with RBAC across admin, teacher, student, parent, and employee workflows using React, Bun, Elysia, and PostgreSQL.
+
+    \item Built RESTful APIs with caching and rate limiting; integrated Razorpay payments, webhooks, and WebRTC for real-time parent--teacher meetings, with type-safe forms via React Hook Form/Zod, Vitest testing, Turborepo, and Vercel, Render, and Supabase deployment.
+
+\end{itemize}
+
+\end{rSection}
+
+\vspace{-2pt}
+
+%----------------------------------------------------------------------------------------
+% PROJECT HEADING
+%----------------------------------------------------------------------------------------
+
+\newcommand{\projectHeading}[4]{%
+\noindent
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+\textbf{#1}\,\textbar\,\textbf{#2}
+&
+\textit{%
+\if\relax\detokenize{#3}\relax
+    #4
+\else
+    #3\,\textbar\,#4
+\fi
+}
+\end{tabular*}%
+\vspace{-16pt}
+}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{2pt}
+
+\projectHeading
+{Trajectory}
+{AI-Powered Career Guidance System}
+{\href{https://career-counselling-system.vercel.app/}{Live}}
+{\href{https://github.com/Riyanshverma/career-counselling-system}{Code}}
+
+\begin{itemize}
+\itemsep -3pt {}
+
+\item Trained an MLP psychometric model on 1M+ Big Five and 750K+ RIASEC response sets, achieving 99.98\% accuracy; scored 91-question assessments to derive personality traits and map users to suitable career roadmaps.
+
+\item Engineered a microservices platform with React, Bun/Express, PostgreSQL, Redux, and REST APIs, integrating a FastAPI RAG service with ChromaDB for personalized roadmaps, with Zod/Pydantic validation and rate limiting.
+
+\end{itemize}
+
+\projectHeading
+{Suvidha}
+{AI-Powered Healthcare Ecosystem}
+{}
+{\href{https://github.com/Riyanshverma/suvidha}{Code}}
+
+\begin{itemize}
+\itemsep -3pt {}
+
+\item Engineered an AI healthcare platform with React, Bun/Hono, PostgreSQL, Redis, and BullMQ, implementing priority queues, 1-min waitlist allocation, real-time notifications, access controls, webhooks, and event-driven scheduling.
+
+\item Built multimodal AI for medical image analysis, TTS/STT, health insights, and WhatsApp assistance using 250K+ medicine records; implemented caching, rate limiting, streaming, and 10 compliance controls for observability.
+
+\end{itemize}
+
+\projectHeading
+{4-in-a-Row}
+{Real-Time Multiplayer Game}
+{}
+{\href{https://github.com/Riyanshverma/4-in-a-row}{Code}}
+
+\begin{itemize}
+\itemsep -3pt {}
+
+\item Engineered a real-time multiplayer game using React, Bun/Fastify, Socket.io, Redis, and PostgreSQL, implementing matchmaking, reconnection, move timers, persistent history, leaderboards, and JWT authentication.
+
+\item Built a TypeScript game engine with Minimax, alpha-beta pruning, and bitboards; integrated a Python/FastAPI AI assistant with Pydantic, Ollama, REST/SSE, and Redis for grounded, streaming hints.
+
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\textbf{B.Tech in Computer Science}
+\,\textbar\,
+JK Lakshmipat University, Rajasthan
+\hfill
+2022--2026
+\,\textbar\,
+CGPA: 7.2/10
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
