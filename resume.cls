@@ -26,12 +26,15 @@
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 
+\RequirePackage[left=0.3in,top=0.3in,right=0.3in,bottom=0.3in]{geometry} % Page margins
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
+    citecolor=blue,
 }
 
 \pagestyle{empty} % Suppress page numbers
@@ -115,20 +118,36 @@
 }
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE FORMATTING
+%	ENTRY HEADING FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+% Experience entry: 4 arguments - job title, organisation, location, dates
+\newcommand{\experienceHeading}[4]{%
+    \noindent
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \textbf{#1}\,\textbar\,\textbf{#2}
+        &
+        \textit{#3}\,\textbar\,\textit{#4}
+    \end{tabular*}%
+    \vspace{-16pt}
+}
+
+% Project entry: 4 arguments - project name, tagline, optional left link, right link
+% If the third argument is empty, only the fourth is printed.
+\newcommand{\projectHeading}[4]{%
+\noindent
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+\textbf{#1}\,\textbar\,\textbf{#2}
+&
+\textit{%
+\if\relax\detokenize{#3}\relax
+    #4
+\else
+    #3\,\textbar\,#4
+\fi
+}
+\end{tabular*}%
+\vspace{-16pt}
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip

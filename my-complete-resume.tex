@@ -1,20 +1,5 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[
-    left=0.3in,
-    top=0.3in,
-    right=0.3in,
-    bottom=0.3in
-]{geometry}
-
-% resume.cls already loads hyperref
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blue,
-    linkcolor=blue,
-    citecolor=blue
-}
-
 \name{Riyansh Verma}
 
 \begin{document}
@@ -74,20 +59,6 @@ Software Engineer with full-stack development experience across React, TypeScrip
 \end{rSection}
 
 \vspace{-2pt}
-
-%----------------------------------------------------------------------------------------
-% EXPERIENCE HEADING
-%----------------------------------------------------------------------------------------
-
-\newcommand{\experienceHeading}[4]{%
-    \noindent
-    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-        \textbf{#1}\,\textbar\,\textbf{#2}
-        &
-        \textit{#3}\,\textbar\,\textit{#4}
-    \end{tabular*}%
-    \vspace{-16pt}
-}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE
@@ -162,26 +133,6 @@ Software Engineer with full-stack development experience across React, TypeScrip
 \end{rSection}
 
 \vspace{-2pt}
-
-%----------------------------------------------------------------------------------------
-% PROJECT HEADING
-%----------------------------------------------------------------------------------------
-
-\newcommand{\projectHeading}[4]{%
-\noindent
-\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-\textbf{#1}\,\textbar\,\textbf{#2}
-&
-\textit{%
-\if\relax\detokenize{#3}\relax
-    #4
-\else
-    #3\,\textbar\,#4
-\fi
-}
-\end{tabular*}%
-\vspace{-16pt}
-}
 
 %----------------------------------------------------------------------------------------
 % PROJECTS
@@ -262,7 +213,7 @@ Software Engineer with full-stack development experience across React, TypeScrip
 \begin{itemize}
 \itemsep -3pt {}
 
-\item Engineered a location-aware turf booking platform using React, Node.js, Express, PostgreSQL, Redux, and Google Maps for nearby turf discovery by distance, travel time, traffic, and weather, with slot booking, cancellation, interchangeably , and online payments.
+\item Engineered a location-aware turf booking platform using React, Node.js, Express, PostgreSQL, Redux, and Google Maps for nearby turf discovery by distance, travel time, traffic, and weather, with slot booking, cancellation, and online payments.
 
 \item Built owner workflows and analytics dashboards for turf listings, operating hours, capacity, booking management, customer follow-ups, revenue, and peak-hour analysis, integrating Razorpay and Cloudinary.
 
