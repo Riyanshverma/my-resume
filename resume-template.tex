@@ -1,0 +1,225 @@
+%----------------------------------------------------------------------------------------
+%   TAILORED RESUME TEMPLATE
+%
+%   The canonical structure for a job-tailored resume. This file compiles on
+%   its own, so it can be opened in Overleaf and previewed as-is; the
+%   placeholder text marks every slot that gets filled per application.
+%
+%   Tailoring changes CONTENT, never STRUCTURE. The rules below are the
+%   structure, and they hold for every generated resume:
+%
+%     - Section order is fixed. Sections are never reordered or renamed.
+%     - HEADER and EDUCATION are constant. They are never tailored.
+%     - SUMMARY is rewritten per application.
+%     - TECHNICAL SKILLS uses the eight category rows below, in this order.
+%       A category with nothing relevant to say is dropped whole - it is
+%       never printed with an empty value. Rows are separated by \\[2pt];
+%       the LAST row has no trailing break, or LaTeX complains.
+%     - EXPERIENCE entries may be reworded and reordered, but which roles
+%       exist is a fact, not a choice. Every entry has exactly two bullets.
+%     - PROJECTS are selected per application. Every entry has exactly two
+%       bullets.
+%     - Literal & % $ # _ { } ~ ^ \ must be escaped. A stray % silently
+%       truncates the rest of the line rather than erroring, so escaping is
+%       the renderer's job and never the author's.
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Formatting lives in resume.cls
+
+\name{Riyansh Verma}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% HEADER -- constant, never tailored
+%----------------------------------------------------------------------------------------
+
+\vspace{-22pt}
+
+\begin{center}
+    {\normalsize
+    \href{tel:+919509175031}{+91-9509175031}
+    \,${\vert}$\,
+    \href{mailto:riyanshverma01.2004@gmail.com}{riyanshverma01.2004@gmail.com}
+    \,${\vert}$\,
+    \href{https://www.linkedin.com/in/riyansh-verma}{LinkedIn}
+    \,${\vert}$\,
+    \href{https://github.com/Riyanshverma}{GitHub}
+    \,${\vert}$\,
+    \href{https://riyansh-portfolio-five.vercel.app/}{Portfolio}
+    }
+    \\[2pt]
+\end{center}
+
+\vspace{-2pt}
+
+%----------------------------------------------------------------------------------------
+% SUMMARY -- rewritten per application; 2-4 lines
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SUMMARY}
+Two to four lines positioning the candidate for this specific role. States the
+primary discipline, the technologies actually used to practise it, and where
+that experience came from. Every technology named here must also appear in
+TECHNICAL SKILLS, and every claim must trace back to a real role or project.
+
+\end{rSection}
+
+\vspace{-2pt}
+
+%----------------------------------------------------------------------------------------
+% TECHNICAL SKILLS -- fixed categories, fixed order; drop a whole row if empty
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{TECHNICAL SKILLS}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{2pt}
+
+\textbf{Languages:} Comma, separated, list \\[2pt]
+\textbf{Frontend:} Comma, separated, list \\[2pt]
+\textbf{Backend:} Comma, separated, list \\[2pt]
+\textbf{Databases:} Comma, separated, list \\[2pt]
+\textbf{AI Engineering:} Comma, separated, list \\[2pt]
+\textbf{Testing \& Validation:} Comma, separated, list \\[2pt]
+\textbf{Developer Tools:} Comma, separated, list \\[2pt]
+\textbf{Engineering Concepts:} Comma, separated, list
+
+\end{rSection}
+
+\vspace{-2pt}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE -- \experienceHeading{job title}{organisation}{location}{dates}
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXPERIENCE}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{2pt}
+
+\experienceHeading
+{Job Title}
+{Organisation}
+{Location}
+{Mon 20XX -- Mon 20XX}
+
+\begin{itemize}
+    \itemsep -3pt {}
+
+    \item First bullet: what was built, the stack it was built with, and the
+    scale or scope it ran at. Leads with a verb. Numbers appear only where a
+    real number is known.
+
+    \item Second bullet: the harder part of the same work -- the integration,
+    the performance constraint, the thing that made it non-trivial.
+
+\end{itemize}
+
+\experienceHeading
+{Job Title}
+{Organisation}
+{Location}
+{Mon 20XX -- Mon 20XX}
+
+\begin{itemize}
+    \itemsep -3pt {}
+
+    \item First bullet, as above.
+
+    \item Second bullet, as above.
+
+\end{itemize}
+
+\end{rSection}
+
+\vspace{-2pt}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS -- \projectHeading{name}{tagline}{left link or empty}{right link}
+%             Leave the third argument empty when there is no live deployment;
+%             the separator disappears with it.
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{2pt}
+
+\projectHeading
+{Project Name}
+{One-line description of what it is}
+{\href{https://example.com/}{Live}}
+{\href{https://github.com/Riyanshverma/repository}{Code}}
+
+\begin{itemize}
+\itemsep -3pt {}
+
+\item First bullet: what the project does and the stack behind it.
+
+\item Second bullet: the technically interesting part.
+
+\end{itemize}
+
+\projectHeading
+{Project Without A Deployment}
+{One-line description of what it is}
+{}
+{\href{https://github.com/Riyanshverma/repository}{Code}}
+
+\begin{itemize}
+\itemsep -3pt {}
+
+\item First bullet, as above.
+
+\item Second bullet, as above.
+
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION -- constant, never tailored
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\textbf{B.Tech in Computer Science}
+\,\textbar\,
+JK Lakshmipat University, Rajasthan
+\hfill
+2022--2026
+\,\textbar\,
+CGPA: 7.2/10
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% RESEARCH & PUBLICATIONS -- optional; include only where it is relevant to
+% the role. Uses \experienceHeading with an empty third argument.
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{RESEARCH \& PUBLICATIONS}
+%
+% \setlength{\parskip}{6pt}
+% \setlength{\parindent}{2pt}
+%
+% \experienceHeading
+% {Paper Title}
+% {Publisher}
+% {}
+% {Published Mon 20XX}
+%
+% \begin{itemize}
+%     \itemsep -3pt {}
+%
+%     \item One bullet describing the contribution;
+%     \href{https://example.com/}{available here}.
+%
+% \end{itemize}
+%
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
